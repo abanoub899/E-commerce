@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('login', function () {
+Route::get('/login', function () {
     return view('front.master');
 });
+Route::post('/login',[UserController::class,'login']);
+Route::get('/product',[ProductController::class,'index']);
 
 // Auth::routes();
 

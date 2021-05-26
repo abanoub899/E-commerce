@@ -25,17 +25,20 @@
                         <div class="line"></div> <small class="or text-center">Or</small>
                         <div class="line"></div>
                     </div>
-                    <div class="row px-3"> <label class="mb-1">
-                            <h6 class="mb-0 text-sm">Email Address</h6>
-                        </label> <input class="mb-4" type="text" name="email" placeholder="Enter a valid email address"> </div>
-                    <div class="row px-3"> <label class="mb-1">
-                            <h6 class="mb-0 text-sm">Password</h6>
-                        </label> <input type="password" name="password" placeholder="Enter password"> </div>
-                    <div class="row px-3 mb-4">
-                        <div class="custom-control custom-checkbox custom-control-inline"> <input id="chk1" type="checkbox" name="chk" class="custom-control-input"> <label for="chk1" class="custom-control-label text-sm">Remember me</label> </div> <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
-                    </div>
-                    <div class="row mb-3 px-3"> <button type="submit" class="btn btn-blue text-center">Login</button> </div>
-                    <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a class="text-danger ">Register</a></small> </div>
+                    
+                    <form action="login" method="POST"> <div class="row px-3"> <label class="mb-1">
+                        @csrf
+                        <h6 class="mb-0 text-sm" name="email">Email Address</h6>
+                    </label> <input class="mb-4" type="text" name="email" placeholder="Enter a valid email address"> </div>
+                <div class="row px-3"> <label class="mb-1">
+                        <h6 class="mb-0 text-sm" name="password">Password</h6>
+                    </label> <input type="password" name="password" placeholder="Enter password"> </div>
+                <div class="row px-3 mb-4">
+                    <div class="custom-control custom-checkbox custom-control-inline"> <input id="chk1" type="checkbox" name="chk" class="custom-control-input"> <label for="chk1" class="custom-control-label text-sm">Remember me</label> </div> <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
+                </div>
+                <div class="row mb-3 px-3"> <button type="submit" class="btn btn-blue text-center">Login</button> </div>
+                <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a class="text-danger ">Register</a></small> </div></form>
+                   
                 </div>
             </div>
         </div>
