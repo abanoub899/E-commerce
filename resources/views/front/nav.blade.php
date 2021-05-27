@@ -1,19 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <div class="container">
+      <a href="#" class="navbar-brand">Meu navbar</a>
+      <!--<span class="navbar-brand mb-0 h1"> Meu navbar</span>-->
+      <!--<a href="#" class="navbar-brand">
+          <img src="assets/star.svg" width="30px" height="30px" class="d-inline-block align-top mr-2" alt="">
+          Meu Navbar
+      </a>-->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-       
-      {{-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> --}}
-    </div>
-  </nav>
+      <button type="button" data-toggle="collapse" data-target="#meuNavbar" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="meuNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a href="#" class="nav-link active">php</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Sobre</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Serviçes</a>
+                  <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Design</a>
+                      <a href="#" class="dropdown-item">program</a>
+                      <a href="#" class="dropdown-item">support</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link disabled">products</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">contact</a>
+              </li>
+          </ul>
+
+          <form class="form-inline d-none d-lg-inline-block ml-auto">
+              <input type="text" class="form-control mr-2" placeholder="Buscar...">
+              <button type="button" class="btn btn-danger">
+                  Ok
+              </button>
+          </form>
+      </div>
+  </div>
+
+</nav>
